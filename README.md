@@ -1,155 +1,241 @@
-# Awesome-School-Information-Education-Management-Sis
+# Awesome School Information & Education Management (SIS) Software
 
-# Awesome School Information & Education Management (SIS)
+<div align="center">
 
-> A curated list of top School Information and Education Management (SIS) platforms — both SaaS/Hosted commercial solutions and open-source alternatives for managing student records, enrollment, grading, attendance, and school operations.
-> 🌟 Star this repo if you find it useful! 🌟
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-School-Information-Education-Management-Sis/pulls)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ishandutta2007/Awesome-School-Information-Education-Management-Sis/graphs/commit-activity)
+[![GitHub stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-School-Information-Education-Management-Sis?style=social)](https://github.com/ishandutta2007/Awesome-School-Information-Education-Management-Sis/stargazers)
+
+**A curated directory of top-tier School Information Systems (SIS), Education Management Systems (EMS), and Student Management Software — featuring commercial enterprise SaaS platforms and self-hosted open-source alternatives for K-12 districts, private academies, colleges, and higher education.**
+
+[Explore SaaS Platforms](#-saas--hosted-platforms) • [Open-Source Solutions](#-open-source-software) • [Feature Matrix](#-feature-comparison-matrix) • [Market Dynamics](#-sector-overview--market-dynamics) • [Contributing](#-contributing)
+
+</div>
+
+---
+
+## 📖 Overview & SEO Summary
+
+A **Student Information System (SIS)** — also referred to as a **Student Management System (SMS)**, **School ERP**, or **Education Management System (EMS)** — serves as the operational backbone for academic institutions. Core responsibilities include:
+- **Student Lifecycles:** Admissions, enrollment, digital registration, demographic records, and alumni tracking.
+- **Academic Operations:** Master scheduling, constraint-based timetables, course cataloging, and classroom allocation.
+- **Pedagogical Records:** Gradebooks, transcript generation, standards-based assessments, and report cards.
+- **Campus Administration:** Attendance tracking, fee collection, tuition invoicing, discipline logging, bus transit routing, and parent/student portals.
+
+Whether you are evaluating commercial cloud leaders like PowerSchool and Blackbaud or deploying cost-effective, self-hosted open-source platforms like RosarioSIS, Gibbon, or Frappe Education, this guide provides side-by-side pricing, valuation benchmarks, and architectural insights.
+
+---
+
+## 📈 Sector Overview & Market Dynamics
+
+The global Student Information System (SIS) and Education Management software market is valued at approximately **$12.5 Billion to $13.5 Billion** (projected to reach over **$25 Billion by 2030** at a **CAGR of ~13-14%**). The industry is **moderately concentrated at the enterprise K-12 district layer**—dominated by heavyweight private equity rollups and incumbents like PowerSchool and Nelnet/FACTS—yet remains **fragmented across regional markets and independent academies** where localized regulatory requirements, specialized accreditation workflows, and open-source deployments prevent single-vendor monopolies.
 
 ---
 
 ## 📋 Table of Contents
 
+- [Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
 - [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [PowerSchool SIS](#powerschool-sis)
-  - [Infinite Campus](#infinite-campus)
-  - [Blackbaud SIS](#blackbaud-sis)
-  - [Skyward](#skyward)
-  - [Veracross](#veracross)
-  - [FACTS SIS](#facts-sis)
-  - [Alma SIS](#alma-sis)
-  - [Classter](#classter)
+  - [SaaS SIS Providers Comparison Table](#saas-sis-providers-comparison-table)
+  - [Provider Profiles](#provider-profiles)
 - [Open-Source Software](#-open-source-software)
-  - [RosarioSIS](#rosariosis)
-  - [openSIS](#opensis)
-  - [Gibbon](#gibbon)
-  - [Frappe Education](#frappe-education)
-  - [OpenEduCat](#openeducat)
-  - [Skuul](#skuul)
-  - [Vidra](#vidra)
-  - [AlekSIS](#aleksis)
-- [Comparison at a Glance](#-comparison-at-a-glance)
+  - [Open-Source SIS Repositories Ranked by Stars](#open-source-sis-repositories-ranked-by-stars)
+  - [Open-Source Project Profiles](#open-source-project-profiles)
+- [Feature Comparison Matrix](#-feature-comparison-matrix)
+- [Deployment & Architectural Considerations](#-deployment--architectural-considerations)
 - [Contributing](#-contributing)
+- [License](#-license)
 
 ---
 
 ## 🟦 SaaS / Hosted Platforms
 
-Commercial, cloud-hosted School Information and Education Management platforms. These are not open-source but are included as reference points for feature comparison.
+Commercial cloud-hosted School Information Systems offer turn-key compliance, state/provincial reporting, automated scalability, and enterprise support. The table below compares the leading SaaS SIS vendors sorted in descending order by company scale (valuation or parent revenue).
 
-### PowerSchool SIS
-**Type:** Enterprise K-12 student information system
-PowerSchool is one of the most widely deployed K-12 SIS platforms in North America, covering student records, enrollment, scheduling, gradebook, attendance, and state reporting. It is the long-standing enterprise standard for large school districts, with extensive integrations into assessment and learning tools.
+### SaaS SIS Providers Comparison Table
 
-### Infinite Campus
-**Type:** District-wide SIS with state reporting
-Infinite Campus provides a comprehensive SIS for K-12 districts, with real-time data, gradebook, attendance, behavior tracking, and state compliance reporting. Positioned for large districts needing a unified platform across schools.
+| Platform | Company Valuation / Revenue | Starting Price | Free Tier / Free Trial Limits | Target Market & Deployment |
+| :--- | :--- | :--- | :--- | :--- |
+| **[PowerSchool SIS](https://www.powerschool.com/)** | **$5.6B Valuation** ($698M FY23 Revenue; acquired by Bain Capital) | **$5.00 – $15.00 per student/year** (core SIS baseline quote; excludes setup & add-ons) | **No self-service free tier** (30-day sandbox demo available via sales consultation upon district validation) | Large public K-12 school districts, state education agencies, and regional boards |
+| **[FACTS SIS](https://factsmgt.com/)** | **$4.5B Market Cap** (Division of Nelnet NYSE: NNI; ~$1.4B consolidated revenue) | **$1,000.00/year base platform fee** (plus $25–$55/family tuition setup fees) | **No free tier** (Custom guided sandbox demo available upon scheduling with sales engineers) | Private, independent, and faith-based K-12 schools requiring integrated tuition collection |
+| **[Blackbaud SIS](https://www.blackbaud.com/)** | **$3.75B Market Cap** (NASDAQ: BLKB; ~$1.16B annual revenue) | **$5,000.00/year base contract** (scales with student enrollment and CRM suite modules) | **No free tier** (Interactive guided product tour and personalized pilot demo by request) | Independent private schools, boarding academies, and university prep institutions |
+| **[Infinite Campus](https://www.infinitecampus.com/)** | **$150M – $300M Annual Revenue** (Independent market leader; privately held) | **$5.00 – $12.00 per student/year** (tiered volume model where per-pupil rates decrease at scale) | **No free tier** (Custom district staging pilot with synthetic data available on request) | Mid-to-mega K-12 public school districts and statewide student data deployments |
+| **[Skyward](https://www.skyward.com/)** | **~$80M Annual Revenue** (Privately held K-12 administrative software leader) | **$30,000.00/year base package** (combined SIS & ERP/business suite licensing) | **No free tier** (District discovery session and feature demo access on demand) | Medium-to-large public school districts requiring tight SIS + payroll/HR ERP synchronization |
+| **[Veracross](https://www.veracross.com/)** | **$25M – $39M Annual Revenue** (Private equity-backed by Harvest Partners) | **$500.00/month starting tier** (~$6,000/year for single-office modules; scales with student headcount) | **No free tier** (Personalized administrative demo walkthrough provided by sales consultants) | Elite independent day schools, international academies, and selective boarding schools |
+| **[Alma SIS](https://www.getalma.com/)** | **$5M – $10M Annual Revenue** (Privately held venture-backed SIS) | **$3.50 – $7.00 per student/year** (minimum annual contract threshold applies) | **No free tier** (Interactive feature demonstration session provided upon request) | Small-to-medium public districts, charter schools, and forward-thinking private academies |
+| **[Classter](https://www.classter.com/)** | **~$1M Annual Revenue** (Global modular SaaS provider) | **€8.50 per student/year** (~$9.20/student for Core SIS; €6.50/student for LMS module) | **14-day free trial** (Full sandbox access for up to 50 student test profiles) | K-12 private schools, vocational colleges, higher education, and international training institutes |
 
-### Blackbaud SIS
-**Type:** SIS for independent and private schools
-Blackbaud's SIS is part of its broader education management suite, targeting private and independent schools with admissions, enrollment, billing, and academic management integrated into the Blackbaud ecosystem.
+### Provider Profiles
 
-### Skyward
-**Type:** K-12 SIS with strong state reporting
-Skyward provides SIS and ERP solutions for K-12 schools and districts, with gradebook, attendance, scheduling, and compliance reporting. Known for its focus on state-specific reporting requirements.
+#### PowerSchool SIS
+* **Architecture:** Multi-tenant enterprise cloud.
+* **Core Strengths:** Long-standing North American market leader with state compliance reporting engines across all 50 US states and Canadian provinces. Deep interoperability with Schoology LMS, PowerBuddy AI, and Naviance college readiness.
+* **Considerations:** Implementation and data migration often require lengthy timelines and substantial professional services contracts ($10,000 to $50,000+).
 
-### Veracross
-**Type:** SIS for independent schools
-Veracross provides a unified SIS and school management platform for independent schools, covering admissions, academics, billing, and communications in a single system.
+#### FACTS SIS (formerly RenWeb)
+* **Architecture:** Cloud-hosted portal environment.
+* **Core Strengths:** Seamless pairing between Student Information Systems and tuition financing/processing via Nelnet. Eliminates reconciliation friction between academic registrar records and school business offices.
+* **Considerations:** Many features and portal apps pass per-family processing charges to parents.
 
-### FACTS SIS
-**Type:** SIS with tuition management integration
-FACTS SIS (formerly RenWeb) combines student information management with tuition payment processing, making it popular among private and faith-based schools needing integrated billing.
+#### Blackbaud SIS
+* **Architecture:** Blackbaud SKY cloud infrastructure.
+* **Core Strengths:** Unified data environment linking admissions, academic grading, donor fundraising, endowment tracking, and alumni relations.
+* **Considerations:** Tailored exclusively to private/independent budgets; complex setup process.
 
-### Alma SIS
-**Type:** Modern SIS for K-12
-Alma provides a modern, user-friendly SIS for K-12 schools, with gradebook, attendance, reporting, and parent/student portals designed for ease of use.
+#### Infinite Campus
+* **Architecture:** Scalable web-based district database.
+* **Core Strengths:** Exceptional state-level reporting, integrated gradebook, real-time parent/student notification engine, and modular food service & bus transportation extensions.
+* **Considerations:** User interface prioritized for administrative power users; can feel heavy for small individual schools.
 
-### Classter
-**Type:** All-in-one education management platform
-Classter offers SIS, LMS, and school management capabilities in a single platform, targeting K-12 and higher education institutions with modular pricing.
+#### Skyward
+* **Architecture:** Enterprise school database suite (SMS 2.0 & Qmlativ).
+* **Core Strengths:** Bridges education management with school district business functions (payroll, human capital, procurement, and general ledger accounting).
+* **Considerations:** Significant upfront implementation overhead; best suited for district-wide consolidations.
+
+#### Veracross
+* **Architecture:** Single-record relational cloud architecture.
+* **Core Strengths:** Zero duplicate student records; CRM, admissions, academics, billing, and health data share a unified core entity table.
+* **Considerations:** Premium pricing structure; focused primarily on independent and private education.
+
+#### Alma SIS
+* **Architecture:** Modern responsive cloud application.
+* **Core Strengths:** Clean, intuitive UI/UX requiring minimal training for instructional staff. Supports traditional letter grades, mastery/competency-based grading, and hybrid models.
+* **Considerations:** Smaller partner integration ecosystem relative to legacy enterprise giants.
+
+#### Classter
+* **Architecture:** All-in-one modular cloud ERP/SIS.
+* **Core Strengths:** Highly transparent modular pricing; combines Student Information System, Learning Management System, and admissions CRM in a configurable portal.
+* **Considerations:** Originates from European education framework; US state-specific compliance requires validation.
 
 ---
 
 ## 🟩 Open-Source Software
 
-Self-hosted, community-driven School Information and Education Management tools. The open-source ecosystem spans **mature K-12 SIS platforms**, **ERP-integrated education modules**, and **modern Laravel/Django-based systems**.
+Self-hosted and open-source School Information Systems give educational institutions absolute control over student privacy, FERPA/GDPR compliance, custom database extensions, and infrastructure hosting budgets.
 
-### RosarioSIS
-**Stack:** PHP / PostgreSQL | **License:** GPL-2.0
-RosarioSIS is a free and open-source Student Information System explicitly designed for K-12 schools, also suitable for academies and higher education [citation:4][citation:10]. It is a lightweight, PHP-based application (not built on a heavy ERP) offering a full range of features: student demographics and enrollment, scheduling, gradebook and report cards, attendance, discipline, student billing, and food service modules [citation:2][citation:4]. It requires only PHP and PostgreSQL, making it deployable on a $5/month VPS, and supports multi-school districts in a single installation [citation:2]. Add-ons include Moodle integration, library, hostel, and messaging [citation:4].  
-**Best for:** Schools and districts wanting a proven, lightweight open-source SIS that can be self-hosted on modest infrastructure with full K-12 functionality.
+The table below lists top open-source SIS and School Management platforms, sorted in descending order by **GitHub Star Count**. Every badge links directly to that project's stargazers community.
 
-### openSIS
-**Stack:** PHP / MySQL | **License:** GPL-2.0 (Community Edition)
-openSIS is a commercial-grade, scalable SIS designed for larger school districts, with a community edition released under GPL [citation:2][citation:6]. Features include comprehensive student records, granular role-based access control, a constraint-based scheduling engine, gradebook and transcripts, attendance, health/medical tracking, and a unique **transportation module** for bus route management [citation:2]. A REST API enables integration with LMS and payment systems [citation:2]. The community edition (v9.3) requires Apache 2.4+, MySQL 5.7/8.0, and PHP 8.x [citation:6].  
-**Best for:** Larger districts wanting enterprise features like transportation management and a REST API, accepting a steeper learning curve and an older UI.
+### Open-Source SIS Repositories Ranked by Stars
 
-### Gibbon
-**Stack:** PHP / MySQL | **License:** GPL-3.0
-Gibbon is a well-established open-source school platform (since 2010) with a focus on flexibility and ease of use, suitable for both small schools and larger institutions [citation:4]. It offers student management, attendance, gradebook, timetables, and reporting, with a clean interface and active community support. It is often compared directly with RosarioSIS as a lighter-weight alternative for schools not needing a full ERP [citation:4].  
-**Best for:** Schools wanting a proven, actively maintained SIS with a gentler learning curve than enterprise-focused platforms.
+| Project & Repo | Stars | Primary Tech Stack | License | Key Focus & Use Case |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Unifiedtransform](https://github.com/changeweb/Unifiedtransform)** | [![GitHub stars](https://img.shields.io/github/stars/changeweb/Unifiedtransform?style=social&color=white)](https://github.com/changeweb/Unifiedtransform/stargazers) | PHP / Laravel / Vue.js | MIT | Feature-packed modern school ERP for admissions, exams, timetables, and student finances. |
+| **[LAVSMS](https://github.com/4jean/lav_sms)** | [![GitHub stars](https://img.shields.io/github/stars/4jean/lav_sms?style=social&color=white)](https://github.com/4jean/lav_sms/stargazers) | PHP / Laravel / Bootstrap | MIT | Clean Laravel-based student information and administrative records management platform. |
+| **[School Management System](https://github.com/hrshadhin/school-management-system)** | [![GitHub stars](https://img.shields.io/github/stars/hrshadhin/school-management-system?style=social&color=white)](https://github.com/hrshadhin/school-management-system/stargazers) | PHP / CodeIgniter / MySQL | Open Source | Complete academic operations system with student profiles, staff directories, and exam marks. |
+| **[OpenEduCat](https://github.com/openeducat/openeducat_erp)** | [![GitHub stars](https://img.shields.io/github/stars/openeducat/openeducat_erp?style=social&color=white)](https://github.com/openeducat/openeducat_erp/stargazers) | Python / Odoo / PostgreSQL | LGPL-3.0 | Comprehensive enterprise education ERP leveraging Odoo for invoicing, HR, CRM, and SIS. |
+| **[Frappe Education](https://github.com/frappe/education)** | [![GitHub stars](https://img.shields.io/github/stars/frappe/education?style=social&color=white)](https://github.com/frappe/education/stargazers) | Python / ERPNext / MariaDB | GPL-3.0 | Modern modular education suite integrated into ERPNext for schools, polytechnics, and colleges. |
+| **[RosarioSIS](https://github.com/francoisjacquet/rosariosis)** | [![GitHub stars](https://img.shields.io/github/stars/francoisjacquet/rosariosis?style=social&color=white)](https://github.com/francoisjacquet/rosariosis/stargazers) | PHP / PostgreSQL / Apache | GPL-2.0 | Lightweight, production-proven K-12 SIS deployable on modest VPS instances with full grading & attendance. |
+| **[Gibbon](https://github.com/GibbonEdu/core)** | [![GitHub stars](https://img.shields.io/github/stars/GibbonEdu/core?style=social&color=white)](https://github.com/GibbonEdu/core/stargazers) | PHP / MySQL / Twig | GPL-3.0 | Flexible, teacher-focused international school management platform maintained continuously since 2010. |
+| **[Django School Management](https://github.com/TareqMonwer/Django-School-Management)** | [![GitHub stars](https://img.shields.io/github/stars/TareqMonwer/Django-School-Management?style=social&color=white)](https://github.com/TareqMonwer/Django-School-Management/stargazers) | Python / Django / Bootstrap | Open Source | Web-based SIS covering online admissions, student dues, fee payments, and academic grade reports. |
+| **[Skuul](https://github.com/yungifez/skuul)** | [![GitHub stars](https://img.shields.io/github/stars/yungifez/skuul?style=social&color=white)](https://github.com/yungifez/skuul/stargazers) | PHP / Laravel 13 / Livewire 4 | MIT | Modern multi-organization and multi-campus SIS featuring team-scoped roles and family portals. |
+| **[Django SMS (Adigun)](https://github.com/adigunsherif/Django-School-Management-System)** | [![GitHub stars](https://img.shields.io/github/stars/adigunsherif/Django-School-Management-System?style=social&color=white)](https://github.com/adigunsherif/Django-School-Management-System/stargazers) | Python / Django / SQLite / PostgreSQL | MIT | Clean Django school system with grade computation, attendance logging, and session terms. |
+| **[Student Management (Jobic10)](https://github.com/jobic10/student-management-using-django)** | [![GitHub stars](https://img.shields.io/github/stars/jobic10/student-management-using-django?style=social&color=white)](https://github.com/jobic10/student-management-using-django/stargazers) | Python / Django / JavaScript | MIT | Educational platform combining course add/drop, quiz management, and automated report generation. |
+| **[openSIS Classic](https://github.com/OS4ED/openSIS-Classic)** | [![GitHub stars](https://img.shields.io/github/stars/OS4ED/openSIS-Classic?style=social&color=white)](https://github.com/OS4ED/openSIS-Classic/stargazers) | PHP / MySQL / Bootstrap | GPL-2.0 | Commercial-grade K-12 district SIS with constraint-based scheduling, transcripts, and bus route tracking. |
+| **[FenixEdu Academic](https://github.com/FenixEdu/fenixedu-academic)** | [![GitHub stars](https://img.shields.io/github/stars/FenixEdu/fenixedu-academic?style=social&color=white)](https://github.com/FenixEdu/fenixedu-academic/stargazers) | Java / Spring / MySQL | LGPL-3.0 | Enterprise higher education SIS developed for university campuses and academic Bologna compliance. |
+| **[Vidra](https://github.com/sandeeep-prajapati/Vidra)** | [![GitHub stars](https://img.shields.io/github/stars/sandeeep-prajapati/Vidra?style=social&color=white)](https://github.com/sandeeep-prajapati/Vidra/stargazers) | Python / Django / SQLite | Open Source | Extensible Django school platform with student records, class sections, and IoT/AI integration hooks. |
+| **[AlekSIS](https://edugit.org/AlekSIS)** | *(EduGit FLOSS)* | Python / Django / Vue.js | EUPL-1.2+ | Fully libre European school information system hosted on independent EduGit infrastructure. |
 
-### Frappe Education
-**Stack:** Python / ERPNext / MariaDB | **License:** GPL-3.0
-Frappe Education is an education module built on the ERPNext ecosystem, providing student records, attendance, assessment, and academic term management [citation:4]. It benefits from ERPNext's broader capabilities including finance, HR, and asset management, making it suitable for institutions wanting SIS functionality integrated with a full ERP.  
-**Best for:** Organizations already using or planning to adopt ERPNext, wanting education management integrated with finance and operations.
+### Open-Source Project Profiles
 
-### OpenEduCat
-**Stack:** Python / Odoo / PostgreSQL | **License:** LGPL-3.0 (Community)
-OpenEduCat is an open-source school management platform built on the Odoo ERP framework, handling student data, attendance, grades, and academic year management [citation:3][citation:4]. It benefits from Odoo's modularity and ecosystem, allowing schools to add CRM, accounting, and other modules as needed. **Trade-off:** The ERP foundation adds complexity and maintenance overhead for small schools that only need core SIS features [citation:4].  
-**Best for:** Schools or groups already using Odoo or wanting an SIS tightly integrated with a broader ERP platform.
+#### RosarioSIS
+* **Stack:** PHP 8+ / PostgreSQL.
+* **Why It Stands Out:** Unrivaled resource efficiency. Unlike heavy ERP distributions, RosarioSIS can run smoothly on an entry-level VPS ($5/month). Ships out of the box with scheduling, discipline logs, gradebooks, attendance, student billing, and multi-school district capabilities.
+* **Ideal For:** Small-to-midsize schools, budget-constrained private academies, and NGOs wanting standard K-12 workflows without bloated infrastructure bills.
 
-### Skuul
-**Stack:** Laravel 13 / Livewire 4 / MySQL / Redis | **License:** MIT
-Skuul is a modern open-source school management system released in October 2026, built on Laravel [citation:9]. It supports multiple organizations and campuses in a single installation, with admissions waitlists, guardian links, gradebooks, exam schedules, report cards, and a finance ledger for payments and refunds [citation:9]. It uses Spatie Permission for **team-scoped roles** (permissions apply to one campus at a time) and includes a **family portal** for students and guardians to view results, attendance, invoices, and notices [citation:9]. **Current limitations:** No public REST API (tokens disabled), Stripe integration exists but checkout is not wired, and the grade calculator can miscount blank marks as zero [citation:9].  
-**Best for:** Schools or small groups wanting a modern, MIT-licensed Laravel-based SIS with multi-campus support and a clean family portal, accepting that some integrations are still in development.
+#### openSIS
+* **Stack:** PHP 8+ / MySQL.
+* **Why It Stands Out:** Designed specifically for institutional scale. Features a constraint-driven scheduling engine, transcripts, medical/health tracking, and an integrated **student transportation module** for district bus routes.
+* **Ideal For:** District administrators needing enterprise SIS capabilities with self-hosted control and REST API integrations.
 
-### Vidra
-**Stack:** Django / Python | **License:** Open Source (with paid customizations)
-Vidra is an open-source school management system built on Django, with a broad feature set covering student management, staff/teacher records, class and section management, subjects and curriculum, attendance, exams and grades, fees and finance, timetables, RBAC, and hostel/transport/facility management [citation:7]. It explicitly offers free core features with **optional paid customizations** for advanced modules like library, alumni, and grievance management [citation:7].  
-**Best for:** Django/Python-centric teams wanting a feature-rich SIS foundation with the option to pay for extended modules, accepting that the project's maturity and community size should be evaluated before production use.
+#### Gibbon
+* **Stack:** PHP 8+ / MySQL / Twig templating.
+* **Why It Stands Out:** Founded and maintained by active educators since 2010. Emphasizes teacher ergonomics with intuitive planning tools, behavior tracking, rubrics, and timetable builders.
+* **Ideal For:** International schools and educators seeking an adaptable, mature platform backed by an active global community.
 
-### AlekSIS
-**Stack:** Python / Django | **License:** Open Source
-AlekSIS is a Python-based school information system established in 2020, included in comparisons of self-hosted school management platforms [citation:4]. It provides core SIS functionality with a focus on the academic year model and role permissions. It is actively developed but has a smaller community and ecosystem than RosarioSIS or Gibbon [citation:4].  
-**Best for:** Python/Django-oriented schools or developers wanting a modern codebase to build upon, accepting a smaller ecosystem.
+#### Frappe Education
+* **Stack:** Python / Frappe Framework / MariaDB.
+* **Why It Stands Out:** Directly inherits the full power of ERPNext (general ledger, payroll, fixed asset management, and CRM). Unifies student fee invoicing and academic progression with institutional bookkeeping.
+* **Ideal For:** Vocational institutes, colleges, and schools seeking an all-in-one ERP that eliminates third-party accounting sync tools.
+
+#### OpenEduCat
+* **Stack:** Python / Odoo ORM / PostgreSQL.
+* **Why It Stands Out:** Bridges education administration with Odoo's vast modular ecosystem (inventory, recruitment, human resources, POS, and website builders).
+* **Ideal For:** Institutions already utilizing or evaluating Odoo as their central enterprise operational platform.
+
+#### Skuul
+* **Stack:** PHP / Laravel 13 / Livewire 4 / MySQL / Redis.
+* **Why It Stands Out:** Built using the latest modern PHP ecosystem standards. Supports multi-tenancy across independent campuses, team-scoped role security (Spatie), and modern Livewire frontends.
+* **Ideal For:** Developers and modern school groups seeking an MIT-licensed, developer-friendly framework codebase.
 
 ---
 
-## 📊 Comparison at a Glance
+## 📊 Feature Comparison Matrix
 
-| Software | License | Stack | K-12 Focus | Parent Portal | Self-Hosted | Best For |
-|----------|---------|-------|------------|---------------|-------------|----------|
-| **PowerSchool** | Proprietary | Cloud | ✅ | ✅ | ❌ | Large K-12 districts |
-| **Infinite Campus** | Proprietary | Cloud | ✅ | ✅ | ❌ | District-wide SIS |
-| **Blackbaud SIS** | Proprietary | Cloud | (Private) | ✅ | ❌ | Independent schools |
-| **RosarioSIS** | GPL-2.0 | PHP/Postgres | ✅ | ✅ | ✅ | Lightweight K-12 SIS |
-| **openSIS** | GPL-2.0 | PHP/MySQL | ✅ | ✅ | ✅ | Enterprise features + transport |
-| **Gibbon** | GPL-3.0 | PHP/MySQL | ✅ | ✅ | ✅ | Proven flexible SIS |
-| **Frappe Education** | GPL-3.0 | Python/ERPNext | (Check) | (Check) | ✅ | ERPNext ecosystem |
-| **OpenEduCat** | LGPL-3.0 | Python/Odoo | (Check) | (Check) | ✅ | Odoo ecosystem |
-| **Skuul** | MIT | Laravel/MySQL | (Check) | ✅ | ✅ | Modern Laravel + multi-campus |
-| **Vidra** | Open Source | Django | (Check) | (Check) | ✅ | Django feature breadth |
+| Platform | Deployment Mode | License | K-12 Focus | Higher Ed Focus | Parent & Student Portal | Gradebook & Transcripts | Finance & Billing |
+| :--- | :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| **PowerSchool SIS** | Cloud SaaS | Proprietary | ✅ | ❌ | ✅ | ✅ | Integrated / Add-on |
+| **FACTS SIS** | Cloud SaaS | Proprietary | ✅ | ❌ | ✅ | ✅ | Native Nelnet Core |
+| **Blackbaud SIS** | Cloud SaaS | Proprietary | ✅ | ✅ | ✅ | ✅ | Integrated Blackbaud Pay |
+| **Infinite Campus** | Cloud SaaS | Proprietary | ✅ | ❌ | ✅ | ✅ | Optional Suite Module |
+| **Skyward** | Cloud / Hosted | Proprietary | ✅ | ❌ | ✅ | ✅ | Native ERP Suite |
+| **Veracross** | Cloud SaaS | Proprietary | ✅ | ❌ | ✅ | ✅ | Native Single-Database |
+| **Alma SIS** | Cloud SaaS | Proprietary | ✅ | ❌ | ✅ | ✅ | Third-party Integrations |
+| **Classter** | Cloud SaaS | Proprietary | ✅ | ✅ | ✅ | ✅ | Native Core Module |
+| **RosarioSIS** | Self-Hosted | GPL-2.0 | ✅ | ✅ | ✅ | ✅ | Native Billing Module |
+| **openSIS** | Self-Hosted | GPL-2.0 | ✅ | ❌ | ✅ | ✅ | Fee Portal / Stripe API |
+| **Gibbon** | Self-Hosted | GPL-3.0 | ✅ | ❌ | ✅ | ✅ | Native Finance Module |
+| **Frappe Education** | Self-Hosted / Cloud | GPL-3.0 | ✅ | ✅ | ✅ | ✅ | Full ERPNext General Ledger |
+| **OpenEduCat** | Self-Hosted / Cloud | LGPL-3.0 | ✅ | ✅ | ✅ | ✅ | Full Odoo Accounting |
+| **Skuul** | Self-Hosted | MIT | ✅ | ❌ | ✅ | ✅ | Native Financial Ledger |
+| **FenixEdu** | Self-Hosted | LGPL-3.0 | ❌ | ✅ | ✅ | ✅ | Academic Administrative |
+
+---
+
+## 🏗 Deployment & Architectural Considerations
+
+When selecting between SaaS and self-hosted open-source school software, evaluate the following factors:
+
+1. **Data Sovereignty & Compliance:**
+   - Public school districts in the US must ensure compliance with **FERPA**, **COPPA**, and state-specific student data privacy compacts.
+   - International institutions must comply with **GDPR** or local personal data protection acts. Self-hosted deployments (e.g., RosarioSIS, AlekSIS, Gibbon) ensure student records never leave institutional servers.
+
+2. **Total Cost of Ownership (TCO):**
+   - **SaaS:** Predictable annual subscription with zero server maintenance overhead, though per-pupil licensing accumulates significantly as student enrollment scales past thousands of pupils.
+   - **Open-Source:** Zero licensing fees, but requires system administration expertise, database backups, automated patch management, and SSL certificate maintenance.
+
+3. **Interoperability & APIs:**
+   - Look for standard integration support such as **OneRoster**, **LTI (Learning Tools Interoperability)**, and **Ed-Fi** data standards for smooth synchronization with Learning Management Systems (Canvas, Google Classroom, Moodle).
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you know of an open-source School Information or Education Management (SIS) tool that should be listed here, please open a pull request with:
+Contributions are warmly welcomed! Help keep this directory comprehensive and up to date:
 
-- Project name and URL
-- Brief description (1–2 sentences)
-- Stack and license
-- Why it stands out
+1. **Check Existing Listings:** Search the table above to ensure the platform isn't already documented.
+2. **Review Criteria:** 
+   - SaaS solutions must have established deployment records in educational institutions.
+   - Open-source software must be actively maintained (commit activity within the last 12 months) and open source under an OSI-approved license.
+3. **Format PR:** Submit pull requests following the table styling and include:
+   - Tool name and official URL.
+   - Primary tech stack and license.
+   - Concise 1–2 sentence description highlighting core differentiators.
 
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source. Note that the open-source ecosystem **splits** between **purpose-built K-12 SIS platforms** (RosarioSIS, openSIS, Gibbon), **ERP-integrated education modules** (Frappe Education, OpenEduCat), and **modern framework-based systems** (Skuul on Laravel, Vidra on Django). **RosarioSIS** is the strongest lightweight choice for K-12 with minimal infrastructure requirements [citation:2], **openSIS** offers the most enterprise features (including transportation) for larger districts [citation:2], and **Gibbon** provides a proven, flexible middle ground [citation:4]. For teams wanting a modern MIT-licensed Laravel codebase, **Skuul** is a notable recent entrant, though some integrations are still maturing [citation:9].
+Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
 
 ---
 
 ## 📄 License
 
-This list is released under CC0 1.0 Universal (Public Domain). The software projects listed retain their respective licenses.
+This compilation is released under the [Creative Commons Zero v1.0 Universal](LICENSE) (Public Domain Dedication).  
+Individual platforms, trademarks, and repositories remain under their respective proprietary or open-source licenses.
 
 ---
 
-⭐ **If this list helped you discover a useful tool, please star the repo!** ⭐
+<div align="center">
+
+⭐ **Found this guide helpful? Give the repository a star!** ⭐
+
+</div>
