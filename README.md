@@ -126,7 +126,7 @@ Commercial cloud-hosted School Information Systems deliver turn-key compliance, 
 
 Self-hosted and open-source School Information Systems give educational institutions absolute control over student privacy, FERPA/GDPR compliance, custom database schemas, and hosting expenditures.
 
-The table below features top open-source SIS and School Management platforms, sorted in descending order by **GitHub Stars_Count**. Every badge links directly to that project's stargazers community.
+The table below features top open-source SIS and School Management platforms, sorted in descending order by **GitHub_Stars_Count**. Every badge links directly to that project's stargazers community.
 
 ### Open-Source SIS Repositories Ranked by Stars
 
